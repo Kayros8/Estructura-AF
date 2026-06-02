@@ -120,6 +120,3 @@ char\* construir\_clave(const char\* estado, const char\* simbolo) {\
 |Promesa O(1)|No la cumple|La cumple|
 |Crecimiento dinámico|realloc manual|Rehashing automático|
 |Viabilidad general|La más débil|De las más fuertes|
-
-## **Veredicto final**
-Con la integración de la tabla hash, la Propuesta 3 deja de ser la propuesta más débil y se convierte en una de las más fuertes para el caso de simular autómatas con muchas consultas a delta. Su única gran falla era estructural y no conceptual, y la tabla hash aporta exactamente la estructura que le faltaba. Gana claramente en velocidad de consulta; para implementar algoritmos formales de transformación como la determinización, la Propuesta 4 sigue siendo más natural. Son fortalezas en ejes distintos.
